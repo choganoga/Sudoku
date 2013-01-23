@@ -14,5 +14,12 @@ ended up running out of time, so I resorted to hard-coding each of the puzzles a
 resulted in the gridData.js file being well over 1,000 lines of code. I realize is definitely not the most
 efficient way to solve the problem, but it worked so I went with it.
 
+Login usernames/password combinations (that I can remember):
+username: Harpo
+password: swordfish
+
+username: Luke
+password: usetheforce
+
 Anyway, thanks for reading and enjoy the games!
 -M.R.P.
