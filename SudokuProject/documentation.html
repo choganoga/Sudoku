@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Play Sudoku!</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <center><a href="index.html"><img src="images/logo.png" border="0"/></a></center>
+            </div><!--end header-->
+            <br/>
+            <div id="content">
+                <span id="documentationheader">Documentation</span><br/><br/>
+                <b>Main Page and Login: </b>When first visiting, a user will see the
+                index page explaining how to play the game and giving a brief description
+                of the game logic based on the assignment description. There is a link to 
+                this Documentation page as well as a button to play the game. When the user
+                clicks this button, if they have not logged in, a pop up will appear asking for
+                login information. A list of valid username/password combinations can be
+                found <a href="http://universe.tc.uvu.edu/cs3550/assignments/PasswordCheck/list.php" target="_blank">here</a>.
+                If the user has already logged in, the login pop up will not appear and
+                they will be taken straight to the game page. If the user attempts to go to
+                the game page url without having logged in it will display a message telling
+                them they must login to play.<br/><br/>
+                <b>The Game Selection Page: </b> After logging in, the user is taken to the
+                game selection page where they may choose a game based on difficulty level.
+                There are three difficulty levels with three games each, as well as a debug level.<br/><br/>
+                <b>Playing the Game: </b>To play, a user must enter a number into an empty square and 
+                press the enter button to submit the value. To edit a value, they must double click on the number.
+                When the game is finished and all the values are correct a pop up will display 
+                congratulating the user and showing their time, the timer will stop, and the user's 
+                score will be saved using HTML5's localStorage based on the amount of time 
+                elapsed. When viewing the same game page again the
+                top five users with the quickest times will be listed for that game.
+                Refreshing the page will result in the loss of current game, as it will 
+                take the user back to the game selection page.<br/><br/>
+                <b>The Instructions Button: </b>On each game page there is a button for Instructions
+                on how to play the game. Clicking it shows a pop up window with information
+                about how to play the game, and pauses the timer.<br/><br/>
+                <b>The Check My Answers Button: </b>Each game page also has a Check My Answers
+                button. Clicking the button will call a function that loops through
+                all of the values entered in the grid and compare these with the game's 
+                corresponding answers grid which is hard-coded in another JavaScript file.
+                This button will only work on the values that were submitted using the enter key,
+                so if there are values in some text fields that have not been submitted they 
+                will be looked over. If the user's answers are correct they will be alerted 
+                that there are no errors. If there are incorrect values entered, the numbers
+                will turn red and shake, using the <a href="http://jackrugile.com/jrumble/" target="_blank">jRumble plugin</a>. 
+                To change an incorrect value, just double click it.<br/><br/>
+                <b>The Player List: </b>This is a list of players that was hard-coded in the
+                players.xml file. The players values are read using an XMLHttpRequest and 
+                inserted into the navbar. The XML seems to only display properly in Firefox 
+                when viewing the pages locally.<br/><br/>
+                <b>The Debug Level: </b>This is a grid containing all 1's, so the user may enter 
+                the last two 1's to see quickly what happens upon game completion. I used this grid
+                for debugging the congratulations pop up, timer behavior, localStorage implementation,
+                and to verify whether the user had in fact entered all correct values.
+                <div id="footer">
+                    <a href="index.html">&laquo; Go back</a>
+                </div>
+            </div><!--end content-->
+        </div><!--end main-->
+    </body>
+</html>

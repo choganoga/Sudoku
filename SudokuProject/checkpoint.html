@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Play Sudoku!</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <center><a href="index.html"><img src="images/logo.png" border="0"/></a></center>
+            </div><!--end header-->
+            <br/>
+            <div id="content">
+                <span id="checkpointheader">Checkpoint</span><br/>
+                Based on the description of the game logic, here is a list of 
+                tasks completed or not yet implemented:
+                <br/><br/>
+                <table id="tasks">
+                    <tr>
+                        <th>Task</th>
+                        <th>Completed</th>
+                        <th>Notes</th>
+                    <tr>
+                        <td>Given numbers are in a different style than 
+                            user-entered numbers, and given numbers cannot be 
+                            changed</td>
+                        <td><center><img src="images/check.png" width="30%"/></center></td>
+                        <td><b>Complete:</b> Once a game has been selected, given 
+                            numbers are blue, and users may not alter them</td>
+                    </tr>
+                    <tr>
+                        <td>The player can get feedback on incorrect numbers at 
+                            any time</td>
+                        <td><center><img src="images/check.png" width="30%"/></center></td>
+                <td><b>Complete:</b> After entering an incorrect number, when the 
+                    user clicks the Check my Answers button the incorrect number 
+                    turns red. Upon entering another value the number turns black again.</td>
+                    </tr>
+                    <tr>
+                        <td>There are multiple difficulty levels and multiple 
+                            puzzles to choose from in each difficulty level</td>
+                        <td><center><img src="images/check.png" width="30%"/></center></td>
+                <td><b>Complete:</b> Upon opening a new window, a user has 3 
+                    options of difficulty each with 3 different grids in the 
+                    form of drop down menus. When the user selects the desired 
+                    grid, they are then taken to the game page.</td>
+                    </tr>
+                    <tr>
+                        <td>Puzzles are loaded using Ajax</td>
+                        <td><center><img src="images/x.png" width="30%"/></center></td>
+                        <td><b>Not Complete:</b> Will be implemented in later version</td>
+                    </tr>
+                    <tr>
+                        <td>There is a timer that tells how long the player has 
+                            been working on the puzzle</td>
+                        <td><center><img src="images/gear.png" width="30%"/></center></td>
+                        <td><b>In Progress:</b> Timer has been implemented but 
+                            with no way of knowing when to stop. In later versions, 
+                            timer will stop when the user has completed the game.</td>
+                    </tr>
+                    <tr>
+                        <td>There is a list of high scores based on the time 
+                            required to complete the puzzle.</td>
+                        <td><center><img src="images/x.png" width="30%"/></center></td>
+                        <td><b>Not Complete:</b> Will be implemented in later version</td>
+                    </tr>
+                </table>
+                <font style="font-size:7pt; float:right; margin-top:5px;">Last updated 6/4/2012</font>
+                <div id="footer">
+                    <a href="index.html">&laquo; Go back</a>
+                </div>
+            </div><!--end content-->
+        </div><!--end main-->
+    </body>
+</html>
