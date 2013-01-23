@@ -1,9 +1,0 @@
-//basic grid1 sudoku 2nd over, 4th down
-//medium grid4 sudoku 2nd page, 2nd on top
-//hard grid7 sudoku 2nd over, last row
-
-http://dingo.sbs.arizona.edu/~sandiway/sudoku/examples.html: grid2 is 1st easiest, grid3 is 2nd easiest
-grid5 is intermediate
-grid6 is 1st difficult
-grid8 is 2nd difficult
-grid9 is challenge

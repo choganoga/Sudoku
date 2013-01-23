@@ -90,13 +90,6 @@ function getCookieTime(){
 
 //displays options of games to valid users
 function displayDifficulty(){ 
-    var html = "";
-    var count = 0;
-    for(var i = 0; i < 25; i += 0.5){
-        html += i  + "<br/>";
-        count++;
-    }
-    html += "<br/>Count: " + count;
     
     //if(document.cookie.indexOf("3550timestamp") == -1){
     if(false){ //for debugging in chrome on local machine
@@ -127,7 +120,7 @@ function displayDifficulty(){
         "<option value='grid8'>Game 8</option>" +
         "<option value='grid9'>Game 9</option>" +
         "<option value='grid10'>DEBUG</option>" +
-        "</select></form></center>" + html;
+        "</select></form></center>";
     }
 }
 
